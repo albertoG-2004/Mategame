@@ -4,7 +4,7 @@ export function manejarPuntosWorker(puntosWorker, sonidoPuntos, puntos, pregunta
             sonidoPuntos.play();
             puntos += 10;
             document.getElementById('puntos').textContent = puntos;
-            timerWorker.postMessage({accion: 'sumarTiempo', tiempoExtra: 10});
+            timerWorker.postMessage({accion: 'sumarTiempo', tiempoExtra: 5});
         }
         preguntas++;
         if (preguntas % 10 === 0) nivel++;

@@ -20,6 +20,6 @@ onmessage = function(e) {
     postMessage({correcto});
     
     if (correcto) {
-        postMessage({accion: 'sumarTiempo', tiempoExtra: 10});
+        postMessage({accion: 'sumarTiempo', tiempoExtra: 5});
     }
 };
