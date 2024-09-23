@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/game.css">
+    <title>MateGame-Juego</title>
+</head>
+<body>
+    <div id="container">
+        <audio id="sonidoPuntos" src="../multimedia/collect-points-190037.mp3"></audio>
+        <audio id="sonidoTiempo" src="../multimedia/game-over-classic-206486.mp3"></audio>
+
+        <div id="titulo">
+            <p>MateGame</p>
+        </div>
+        <div id="tiempoContainer">
+            <p class="lblTiempo">Tiempo</p>
+            <p class="lblTiempo" id="tiempo"></p>
+        </div>
+        <div id="puntosContainer">
+            <p class="lblPuntos" id="puntos">0</p>
+        </div>
+        <div id="pizarronContainer">
+            <div id="pizarron">
+                <p id="problema">10 + 20 = </p>
+                <input type="text" class="respuesta" id="respuesta">
+            </div>
+            <div id="btnContainer">
+                <button id="btnResponder">Responder</button>
+            </div>
+        </div>
+        <div id="alertaTiempo" class="modal">
+            <div class="modalContainer">
+                <p>¡Se acabó el tiempo!</p>
+                <button id="btnReiniciar">Reiniciar</button>
+                <a href="../../index.html"><button id="btnSalir">Salir</button></a>
+            </div>
+        </div>        
+    </div>
+    <script type="module" src="../scripts/game.js"></script>
+</body>
+</html>
